@@ -48,7 +48,9 @@ module.exports = function (grunt) {
         }
 
         srcFile.glyphs.forEach(function (glyph) {
-          lines.push("\t['" + prefix + glyph.css + suffix + "', " + glyph.code + "],");
+          if ((glyph.src === 'custom_icons' && glyph.selected) || glyph.src !== 'custom_icons') {
+            lines.push("\t['" + prefix + glyph.css + suffix + "', " + glyph.code + "],");
+          }
         });
       });
 

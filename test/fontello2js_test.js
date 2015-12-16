@@ -30,12 +30,18 @@ exports.fontello2js = {
 
   testIcons: function (test) {
     var result = require('../tmp/result.js');
+
+    // ensure custom fonts that are not selected do not get included
+    test.throws(result['icon-account-r'], 'icon-account-r does not exist');
+
+    test.ok(result['icon-account'], 'icon-account exists');
     test.ok(result['icon-emo-happy'], 'icon-emo-happy exists');
     test.ok(result['icon-glass'], 'icon-glass exists');
     test.ok(result['icon-angellist'], 'icon-angellist exists');
     test.ok(result['icon-play'], 'icon-play exists');
     test.ok(result['icon-pitch'], 'icon-pitch exists');
 
+    test.equal(result['icon-account'].charCodeAt(0), 59397, 'icon-account is correct');
     test.equal(result['icon-emo-happy'].charCodeAt(0), 59392, 'icon-emo-happy is correct');
     test.equal(result['icon-glass'].charCodeAt(0), 59393,  'icon-glass is correct');
     test.equal(result['icon-angellist'].charCodeAt(0), 59394,  'icon-angellist is correct');

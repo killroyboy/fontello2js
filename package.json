@@ -1,6 +1,6 @@
 {
   "name": "grunt-fontello2js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate a JavaScript module file for referencing font icons based on a fontello config file",
   "homepage": "https://github.com/killroyboy/grunt-fontello2js",
   "repository": "https://github.com/killroyboy/grunt-fontello2js",
