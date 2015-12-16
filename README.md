@@ -38,7 +38,7 @@ grunt.initConfig({
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+In this example, a config.json from fontello.com is processed into a resulting result.js 
 
 ```js
 grunt.initConfig({
@@ -56,6 +56,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 0.0.1 Initial Release
+0.0.2 Do not include custom fonts that are not selected
 
 ## License
 Copyright (c) 2015 Dan Wilson. Licensed under the MIT license.
