@@ -1,6 +1,6 @@
 # grunt-fontello2js
 
-> Generate a Javascript Module file for referencing font icons based on a fontello config file
+> Generate a Javascript module file for referencing font icons based on a fontello config file
 
 ## Getting Started
 This plugin requires Grunt.
