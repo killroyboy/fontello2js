@@ -56,6 +56,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 0.0.1 Initial Release
+
 0.0.2 Do not include custom fonts that are not selected
 
 ## License
