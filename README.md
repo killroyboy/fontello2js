@@ -36,8 +36,6 @@ grunt.initConfig({
 ### Options
 
 ### Usage Examples
-
-#### Default Options
 In this example, a config.json from fontello.com is processed into a resulting result.js 
 
 ```js
@@ -49,6 +47,14 @@ grunt.initConfig({
     },
   },
 })
+```
+
+Specific font icons can then be referenced within code by requiring the resulting file and using the name of the icon as the key into the object.
+
+```
+var icons = require('result.js');
+
+console.log(icons['my-icon-name']);
 ```
 
 ## Contributing
